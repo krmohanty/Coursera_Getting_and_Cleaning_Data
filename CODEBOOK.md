@@ -3,11 +3,11 @@ Codebook for wearable computing dataset
 
 ## Variables
 ````
-subject                    1..2
+subject                    
     Subject number
                            1..30 .Unique identifier assigned to each subject
 
-label                      6..18
+label                      1..6 . Unique identifier assigned to each activity.
     Acitivity label
                            "WALKING"
                            "WALKING_UPSTAIRS"
@@ -16,202 +16,202 @@ label                      6..18
                            "STANDING"
                            "LAYING"
 
-tbodyaccmeanx              12
+tbodyacc_mean_x              12
     Described below
 
-tbodyaccmeany              12
+tbodyacc_mean_y              12
     Described below
 
-tbodyaccmeanz              12
+tbody_accmean_z              12
     Described below
 
-tbodyaccstdx               12
+tbody_accstd_x               12
     Described below
 
-tbodyaccstdy               12
+tbodyacc_std_y               12
     Described below
 
-tbodyaccstdz               12
+tbodyacc_std_z               12
     Described below
 
-tgravityaccmeanx           12
+tgravityacc_mean_x           12
     Described below
 
-tgravityaccmeany           12
+tgravityacc_mean_y           12
     Described below
 
-tgravityaccmeanz           12
+tgravityacc_mean_z           12
     Described below
 
-tgravityaccstdx            12
+tgravityacc_std_x            12
     Described below
 
-tgravityaccstdy            12
+tgravityacc_std_y            12
     Described below
 
-tgravityaccstdz            12
+tgravityacc_std_z            12
     Described below
 
-tbodyaccjerkmeanx          12
+tbodyaccjerk_mean_x          12
     Described below
 
-tbodyaccjerkmeany          12
+tbodyaccjerk_mean_y          12
     Described below
 
-tbodyaccjerkmeanz          12
+tbodyaccjerk_mean_z          12
     Described below
 
-tbodyaccjerkstdx           12
+tbodyaccjerk_std_x           12
     Described below
 
-tbodyaccjerkstdy           12
+tbodyaccjerk_std_y           12
     Described below
 
-tbodyaccjerkstdz           12
+tbodyaccjerk_std_z           12
     Described below
 
-tbodygyromeanx             12
+tbodygyro_mean_x             12
     Described below
 
-tbodygyromeany             12
+tbodygyro_mean_y             12
     Described below
 
-tbodygyromeanz             12
+tbodygyro_mean_z             12
     Described below
 
-tbodygyrostdx              12
+tbodygyro_std_x              12
     Described below
 
-tbodygyrostdy              12
+tbodygyro_std_y              12
     Described below
 
-tbodygyrostdz              12
+tbodygyro_std_z              12
     Described below
 
-tbodygyrojerkmeanx         12
+tbodygyrojerk_mean_x         12
     Described below
 
-tbodygyrojerkmeany         12
+tbodygyrojerk_mean_y         12
     Described below
 
-tbodygyrojerkmeanz         12
+tbodygyrojerk_mean_z         12
     Described below
 
-tbodygyrojerkstdx          12
+tbodygyrojerk_std_x          12
     Described below
 
-tbodygyrojerkstdy          12
+tbodygyrojerk_std_y          12
     Described below
 
-tbodygyrojerkstdz          12
+tbodygyrojerk_std_z          12
     Described below
 
-tbodyaccmagmean            12
+tbodyaccmag_mean            12
     Described below
 
-tbodyaccmagstd             12
+tbodyaccmag_std             12
     Described below
 
-tgravityaccmagmean         12
+tgravityaccmag_mean         12
     Described below
 
-tgravityaccmagstd          12
+tgravityaccmag_std          12
     Described below
 
-tbodyaccjerkmagmean        12
+tbodyaccjerkmag_mean        12
     Described below
 
-tbodyaccjerkmagstd         12
+tbodyaccjerkmag_std         12
     Described below
 
-tbodygyromagmean           12
+tbodygyromag_mean           12
     Described below
 
-tbodygyromagstd            12
+tbodygyromag_std            12
     Described below
 
-tbodygyrojerkmagmean       12
+tbodygyrojerkmag_mean       12
     Described below
 
-tbodygyrojerkmagstd        12
+tbodygyrojerkmag_std        12
     Described below
 
-fbodyaccmeanx              12
+fbodyacc_mean_x              12
     Described below
 
-fbodyaccmeany              12
+fbodyacc_mean_y              12
     Described below
 
-fbodyaccmeanz              12
+fbodyacc_mean_z              12
     Described below
 
-fbodyaccstdx               12
+fbodyacc_std_x               12
     Described below
 
-fbodyaccstdy               12
+fbodyacc_std_y               12
     Described below
 
-fbodyaccstdz               12
+fbodyacc_std_z               12
     Described below
 
-fbodyaccjerkmeanx          12
+fbodyaccjerk_mean_x          12
     Described below
 
-fbodyaccjerkmeany          12
+fbodyaccjerk_mean_y          12
     Described below
 
-fbodyaccjerkmeanz          12
+fbodyaccjerk_mean_z          12
     Described below
 
-fbodyaccjerkstdx           12
+fbodyaccjerk_std_x           12
     Described below
 
-fbodyaccjerkstdy           12
+fbodyaccjerk_std_y           12
     Described below
 
-fbodyaccjerkstdz           12
+fbodyaccjerk_std_z           12
     Described below
 
-fbodygyromeanx             12
+fbodygyro_mean_x             12
     Described below
 
-fbodygyromeany             12
+fbodygyro_mean_y             12
     Described below
 
-fbodygyromeanz             12
+fbodygyro_mean_z             12
     Described below
 
-fbodygyrostdx              12
+fbodygyro_std_x              12
     Described below
 
-fbodygyrostdy              12
+fbodygyro_std_y              12
     Described below
 
-fbodygyrostdz              12
+fbodygyro_std_z              12
     Described below
 
-fbodyaccmagmean            12
+fbodyaccmag_mean            12
     Described below
 
-fbodyaccmagstd             12
+fbodyaccmag_std             12
     Described below
 
-fbodybodyaccjerkmagmean    12
+fbodybodyaccjerkmag_mean    12
     Described below
 
-fbodybodyaccjerkmagstd     12
+fbodybodyaccjerkmag_std     12
     Described below
 
-fbodybodygyromagmean       12
+fbodybodygyromag_mean       12
     Described below
 
-fbodybodygyromagstd        12
+fbodybodygyromag_std        12
     Described below
 
-fbodybodygyrojerkmagmean   12
+fbodybodygyrojerkmag_mean   12
     Described below
 
-fbodybodygyrojerkmagstd    12
+fbodybodygyrojerkmag_std    12
     Described below
 
 ````
