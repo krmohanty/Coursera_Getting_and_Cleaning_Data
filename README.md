@@ -3,7 +3,7 @@
 For creating a tidy data set of wearable computing data originally from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ## Files in this repo
-* README.md -- you are reading it right now
+* README.md 
 * CodeBook.md -- codebook describing variables, the data and transformations
 * run_analysis.R -- actual R code
 
@@ -24,29 +24,26 @@ The script assumes it has in it's working directory the following files and fold
 
 The output is created in working directory with the name of tidy2.txt
 
-*Note:* the R script is built to run without including any libraries for the purpose of this course.
+The code follows differnt flow, compared to the steps in the instructions, but outputs all the steps correctly.
 
 ## run_analysis.R walkthrough
 It follows the goals step by step.
 
-* Step 1:
-  * Read all the test and training files: y\_test.txt, subject\_test.txt and X_test.txt.
-  * Combine the files to a data frame in the form of subjects, labels, the rest of the data.
+* 1 (step 2 in the question):
+  * Read the activity labels and features datasets.
+  * Select a subset of features as per the requirement and also rename variables with convinient names
 
-* Step 2:
-  * Read the features from features.txt and filter it to only leave features that are either means ("mean()") or standard deviations ("std()"). The reason for leaving out meanFreq() is that the goal for this step is to only include means and standard deviations of measurements, of which meanFreq() is neither.
-  * A new data frame is then created that includes subjects, labels and the described features.
+* 2 (step 4 in the question):
+  * Read training and test datasets. Suset the columns which are required and rename the columns with convinient names.
 
-* Step 3:
-  * Read the activity labels from activity_labels.txt and replace the numbers with the text.
+* 3 (step 1 in the question):
+  * Merge training and test datasets thus formed..
 
-* Step 4:
-  * Make a column list (includig "subjects" and "label" at the start)
-  * Tidy-fy the list by removing all non-alphanumeric characters and converting the result to lowercase
-  * Apply the now-good-columnnames to the data frame
+* 4 (step 3 in the question):
+  * Merge Activity_id and activity_lable
   
 * Step 5:
-  * Create a new data frame by finding the mean for each combination of subject and label. It's done by `aggregate()` function
+  * Create a summarized tidy data set with means of all variables by subject and activity_label. It's done by `aggregate()` function
   
 * Final step:
-  * Write the new tidy set into a text file called tidy2.txt, formatted similarly to the original files.
+  * Write the new tidy set into a text file called tidy_data_mean.txt, formatted similarly to the original files.
